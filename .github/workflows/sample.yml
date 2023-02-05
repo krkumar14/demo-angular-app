@@ -15,4 +15,5 @@ jobs:
           pwd
           ls
           npm install
-          docker build -t .
+      - name: build image
+        run: docker build . --file Dockerfile --tag sampleimage:v1
