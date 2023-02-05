@@ -10,4 +10,6 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v3
-      - run: docker version
+      - run: |
+          docker version
+          pwd
